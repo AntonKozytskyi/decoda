@@ -1,24 +1,27 @@
 {
-    "name": "mjohnson/decoda",
-    "type": "library",
-    "description": "A lightweight lexical string parser for BBCode styled markup.",
-    "keywords": ["bbcode", "markup", "decoda", "parser", "lexer", "filter", "hook"],
-    "homepage": "http://milesj.me/code/php/decoda",
-    "license": "MIT",
-    "authors": [
+    "repositories": [
         {
-            "name": "Miles Johnson",
-            "homepage": "http://milesj.me"
+            "type": "git",
+            "url": "https://github.com/modjolees/decoda"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "modjolees/decoda",
+                "version": "6.6.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/modjolees/decoda",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-0": { "Decoda": "src/" }
+                }
+            }
         }
     ],
     "require": {
         "php": ">=5.3.0",
         "ext-mbstring": "*"
-    },
-    "support": {
-        "source": "https://github.com/milesj/decoda"
-    },
-    "autoload": {
-        "psr-0": { "Decoda": "src/" }
     }
 }
